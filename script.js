@@ -1,16 +1,14 @@
-let sum=0
 function fibonacci(num) {
-// your code here
-	if(num==0){
-		return 0
-	}
-	else if(num==1){
-		return 1
-	}
-	else{
-		sum=fibonacci(num-1)+fibonacci(num-2)
-		return sum
-	}
+    let num1 = 0;
+    let num2 = 1;
+    let sum;
+    let i = 0;
+    for (i = 0; i < num; i++) {
+        sum = num1 + num2;
+        num1 = num2;
+        num2 = sum;
+    }
+    return num2;
 }
-console.log(sum)
+console.log("Fibonacci(num): " + fibonacci(num));
 module.exports = fibonacci;
