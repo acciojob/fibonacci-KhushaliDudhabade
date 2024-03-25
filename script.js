@@ -10,5 +10,5 @@ function fibonacci(num) {
     }
     return num2;
 }
-console.log("Fibonacci(num): " + fibonacci(num));
+console.log(fibonacci(num));
 module.exports = fibonacci;
